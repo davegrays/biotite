@@ -72,3 +72,6 @@ requires = [
     "cython >= 3.0",
 ]
 build-backend = "hatchling.build"
+
+[project.scripts]
+biotite-setup-ccd = "biotite.setup_ccd:main"

@@ -460,4 +460,10 @@ def setup_ccd(target_diriectory):
     compressed_file.write(target_diriectory / "components.bcif")
 
 from pathlib import Path
-setup_ccd(Path(__file__).parent / "src" / "biotite" / "structure" / "info" / "ccd")
+
+
+def main():
+    setup_ccd(Path(__file__).parent / "structure" / "info" / "ccd")
+
+if __name__ == "__main__":
+    main()
